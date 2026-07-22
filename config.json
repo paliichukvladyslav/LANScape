@@ -1,0 +1,8 @@
+{
+	"id": "gentoo-pc",
+	"display_name": "Gentoo Workstation",
+	"device_ip": "192.168.0.106",
+	"click_action": "ssh://b@192.168.1.106",
+	"icon_id": "linux_gentoo",
+	"MOTD": "Test"
+}

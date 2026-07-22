@@ -1,0 +1,14 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CLASSES_ROOT\CLSID\{099e168d-2180-4430-9a4c-34eb716023a0}]
+@="LANScape Network"
+
+[HKEY_CLASSES_ROOT\CLSID\{099e168d-2180-4430-9a4c-34eb716023a0}\InProcServer32]
+@="@DLL_PATH@"
+"ThreadingModel"="Apartment"
+
+[HKEY_CLASSES_ROOT\CLSID\{099e168d-2180-4430-9a4c-34eb716023a0}\ShellFolder]
+"Attributes"=dword:20000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Desktop\NameSpace\{099e168d-2180-4430-9a4c-34eb716023a0}]
+@="LANScape Network"

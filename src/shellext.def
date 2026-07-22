@@ -1,0 +1,4 @@
+LIBRARY "lanscape_shellext"
+EXPORTS
+    DllCanUnloadNow      PRIVATE
+    DllGetClassObject    PRIVATE
