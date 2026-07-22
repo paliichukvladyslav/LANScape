@@ -1,0 +1,15 @@
+[Unit]
+Description=LANScape Server Service
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=@SERVER_EXEC_PATH@
+WorkingDirectory=@SERVER_PATH@
+Restart=on-failure
+RestartSec=5
+User=nobody
+Group=nogroup
+
+[Install]
+WantedBy=multi-user.target

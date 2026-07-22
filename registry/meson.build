@@ -28,3 +28,16 @@ configure_file(
   output: 'sidebar_uninstall.reg',
   configuration: conf_data
 )
+
+server_exec_path = meson.project_build_root() / 'src' / 'lanscape-server'
+server_path = meson.project_build_root() / 'src'
+
+conf_data_systemd = configuration_data()
+conf_data_systemd.set('SERVER_EXEC_PATH', server_exec_path)
+conf_data_systemd.set('SERVER_PATH', server_path)
+
+configure_file(
+  input: 'lanscape.service.in',
+  output: 'lanscape.service',
+  configuration: conf_data_systemd
+)
